@@ -34,7 +34,6 @@ class CodeQualityTest {
                     "La classe " + clazz.getSimpleName() + " ne devrait pas être marquée comme dépréciée");
 
             // Vérifie la présence de documentation JavaDoc
-            String classDoc = clazz.getPackage().getName() + "." + clazz.getSimpleName();
             assertTrue(clazz.getPackage().getName().contains("com.example.pizza"),
                     "La classe " + clazz.getSimpleName() + " devrait être dans le package com.example.pizza");
         }
